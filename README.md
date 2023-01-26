@@ -17,29 +17,35 @@ Endpoint encargado de la verificación de credenciales del usuario.
 
 Body de petición: 
 
-  `{
-		"usuario" : "usuario1@gmail.com",
-		"password" : "Qa654321"
-	}`
+  ```
+  {
+	"usuario" : "usuario1@gmail.com",
+	"password" : "Qa654321"
+  }
+  ```
  
  Respuesta 200 ok
  
- `{
+ ```
+ {
     "status": "ok",
     "result": {
         "token": "12580c521fa35ec64c8568553f5dd76b"
     }
-}`
+ }
+```
 
 Respuesta 200 ok con credenciales invalidas: 
 
-`{
-    "status": "error",
-    "result": {
-        "error_id": "200",
-        "error_msg": "El password es incorrecto"
+```
+{
+   "status": "error",
+   "result": {
+	"error_id": "200",
+	"error_msg": "El password es incorrecto"
     }
-}`
+}
+```
 
 ## Consultar Animales
 
@@ -51,7 +57,8 @@ Lista de animales completa:
 
 Respuesta 200 ok
 
-`[
+```
+[
     {
         "id": "2",
         "nombre": "elefante",
@@ -62,21 +69,24 @@ Respuesta 200 ok
         "nombre": "gato",
         "imagen": "http/imagenDeGato.jpg"
     }
-]`
+]
+```
 
 Busqueda de un animal en especifico:
 
-`GET /animales.php?id=(numero de id)`
+`GET /animales.php?id=(número de id)`
 
 Respuesta 200 ok
 
-`[
+```
+[
     {
         "id": "2",
         "nombre": "elefante",
         "imagen": "http/imagen.jpg"
     }
-]`
+]
+```
 
 
 ## Agregar Animal
@@ -87,32 +97,38 @@ Este endpoint con el método POST se encarga de agregar nuevos animales a la lis
 
 Ejemplo de Body en la petición:
 
-`{  
+```
+{  
     "nombre" : "",
     "imagen" : "",
     "token" : "" 
- }`
+}
+```
 
 Los parametros nombre y token son obligatorios.
 
 Respuesta 200 ok
 
-`{
+```
+{
     "status": "ok",
     "result": {
         "id": 8
     }
-}`
+}
+```
 
 Respuesta 401 unauthorized
 
-`{
+```
+{
     "status": "error",
     "result": {
         "error_id": "401",
         "error_msg": "No autorizado"
     }
-}`
+}
+```
 
 
 
