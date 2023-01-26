@@ -93,7 +93,7 @@ Respuesta 200 ok
 
 Este endpoint con el método POST se encarga de agregar nuevos animales a la lista de animales que se tiene de manera local.
 
-`POST /animales`
+`POST /animales.php`
 
 Ejemplo de Body en la petición:
 
@@ -129,6 +129,23 @@ Respuesta 401 unauthorized
     }
 }
 ```
+
+## Eliminar Animal
+
+este endpoint con el método DELETE se encarga de elimanr un animal con un id especifico, de igual manera se solicita el token para poder hacer el borrado.
+
+`DELETE /animales.php?id=(número de id)`
+
+Ejemplo de body:
+
+```
+{
+   "token" : ""
+   "id" : ""
+}
+```
+Parametros Id y token son obligatorios.
+
 
 
 
