@@ -141,10 +141,21 @@ Ejemplo de body:
 ```
 {
    "token" : ""
-   "id" : ""
+   "nombre" : ""
 }
 ```
 Parametros Id y token son obligatorios.
+
+Ejemplo de status 200 ok
+
+```
+{
+    "status": "ok",
+    "result": {
+        "nombre": "terrier"
+    }
+}
+```
 
 
 
