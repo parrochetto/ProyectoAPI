@@ -10,6 +10,8 @@ Este es un proyecto desarrollado en php el cual permite hacer un CRUD de manera 
 Para una ejecución local del proyecto es necesario contar con XAMPP.
 Link de descarga : https://www.apachefriends.org/es/download.html
 
+Dentro de XAMPP activar las opciones de tomcat y mysql
+
 Copiar la carpeta del proyecto a la ruta `xampp/htdocs/`
 
 Modificar el archivo `config` con los parametos de configuración local de su base de datos.
