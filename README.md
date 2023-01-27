@@ -69,6 +69,7 @@ Respuesta 200 ok
 {
     "status": "success",
     "message": {
+    	//listado publico
         "affenpinscher": [],
         "african": [],
         "airedale": [],
@@ -76,6 +77,7 @@ Respuesta 200 ok
 	"wolfhound": [
             "irish"
         ],
+	//listado local
         "0": "oruga",
         "1": "Gallo",
       }
