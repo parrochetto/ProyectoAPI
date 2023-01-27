@@ -66,18 +66,20 @@ Lista de animales completa:
 Respuesta 200 ok
 
 ```
-[
-    {
-        "id": "2",
-        "nombre": "elefante",
-        "imagen": "http/imagen.jpg"
-    },
-    {
-        "id": "3",
-        "nombre": "gato",
-        "imagen": "http/imagenDeGato.jpg"
-    }
-]
+{
+    "status": "success",
+    "message": {
+        "affenpinscher": [],
+        "african": [],
+        "airedale": [],
+	...
+	"wolfhound": [
+            "irish"
+        ],
+        "0": "oruga",
+        "1": "Gallo",
+      }
+}
 ```
 
 Busqueda de un animal en especifico:
