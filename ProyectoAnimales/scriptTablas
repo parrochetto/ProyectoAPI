@@ -1,0 +1,27 @@
+CREATE DATABASE animales
+
+CREATE TABLE animal (
+    id INTEGER auto_increment NOT NULL,
+    nombre varchar(45) NULL,
+    imagen varchar(45) NULL,
+    CONSTRAINT animal_PK PRIMARY KEY (id)
+)
+
+CREATE TABLE usuarios (
+    Id INTEGER auto_increment NOT NULL,
+    Usuario varchar(45) NOT NULL,
+    Password varchar(45) NOT NULL,
+    Estado varchar(10) NOT NULL,
+    CONSTRAINT usuarios_PK PRIMARY KEY (Id)
+)
+
+CREATE TABLE usuarios_token(
+    TokenId INTEGER auto_increment NOT NULL,
+    UsuarioId INTEGER NULL,
+    Token varchar(50) NULL,
+    Estado varchar(10) NULL,
+    Fecha date,
+    CONSTRAINT usuarios_token_PK PRIMARY KEY (Id)
+)
+
+INSERT INTO `usuarios`(`Usuario`, `Password`, `Estado`) VALUES ("usuario1@gmail.com","Qa654321","Activo");
